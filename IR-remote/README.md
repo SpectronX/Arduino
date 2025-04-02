@@ -1,4 +1,4 @@
-### This document outlines my experience working with an IR remote and sensor in Arduino to control an LCD screen
+## This document outlines my experience working with an IR remote and sensor in Arduino to control an LCD screen
 
 Similar to C++, programming Arduino also requires libraries to extend functionality of some components. For working with an IR remote, I used the `<IRremote.hpp>` library, which provides functions for handling remote communication protocols.
 
@@ -8,4 +8,27 @@ In writing the code, the IR remote and sensor are configured in the `void setup(
 
 Since Arduino is always listening, it checks if data has been received before processing. So, in the `void loop() {..}`, if we want to start using the sensor, we check to see if it has already received data using `IrReceiver.decode()` and store the value in any variable. The value obtained is the number of the button that has been converted from a hex format to a number by the sensor and stored in `IrReceiver.decodedIRData.decodedRawData`. This variable holds the **32-bit number** transoformed by the IR receiver.
 
-## Reference table for values related to their respective buttons.
+## Reference table for values related to their respective buttons (per the remote I used).
+| Button        | Decoded Value  |
+|---------------|----------------|
+| Power         | 4278238976     |
+| Volume +      | 4261527296     |
+| Func/Stop     | 4244815616     |
+| Backward      | 4211392256     |
+| Pause         | 4194680576     |
+| Forward       | 4177968896     |
+| Down button   | 4144545536     |
+| Volume -      | 4127833856     |
+| Up button     | 4111122176     |
+| Zero          | 4077698816     |
+| EQ            | 4060987136     |
+| St. / Rept    | 4044275456     |
+| 1             | 4010852096     |
+| 2             | 3994140416     |
+| 3             | 3977428736     |
+| 4             | 3944005376     |
+| 5             | 3927293696     |
+| 6             | 3910582016     |
+| 7             | 3877158656     |
+| 8             | 3860446976     |
+| 9             | 3843735296     |
