@@ -1,6 +1,6 @@
 ## My experience working with an IR remote and sensor in Arduino to control an LCD screen
 
-Similar to C++, programming Arduino also requires libraries to extend functionality of some components. For working with an IR remote, I used the `<IRremote.hpp>` library, which provides functions for handling remote communication protocols.
+Similar to C++, programming Arduino also requires libraries to extend functionality of some components. For working with an IR remote, I used the `<IRremote.hpp>` library, which provides functions for handling remote communication protocols. Note: All simulation was done by utilizing the Tinkercad platform.
 
 The IR sensor used has three pins: the right pin connects to the **VCC** which is **5V** on the Arduino, the **GND** (middle pin) connects to the **GND** of the Arduino and the **OUT** pin (left pin) goes to any digital pin on the Arduino board. In using the remote, one should also note that it has protocols for communication, usually **NEC** protocol.
 
