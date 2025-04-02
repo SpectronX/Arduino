@@ -1,4 +1,4 @@
-## This document outlines my experience working with an IR remote and sensor in Arduino to control an LCD screen
+## My experience working with an IR remote and sensor in Arduino to control an LCD screen
 
 Similar to C++, programming Arduino also requires libraries to extend functionality of some components. For working with an IR remote, I used the `<IRremote.hpp>` library, which provides functions for handling remote communication protocols.
 
@@ -32,3 +32,8 @@ Since Arduino is always listening, it checks if data has been received before pr
 | 7             | 3877158656     |
 | 8             | 3860446976     |
 | 9             | 3843735296     |
+
+With this foundation, one can now move on to creating more complex systems that operate using an IR remote.
+
+For more information and detailed tutorials, check out this [YouTube channel](https://youtu.be/9wfWm6RuwPI?si=UFDRNYlWk2XBdhRq).
+
