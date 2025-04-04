@@ -8,6 +8,8 @@ In writing the code, the IR remote and sensor are configured in the `void setup(
 
 Since Arduino is always listening, it checks if data has been received before processing. So, in the `void loop() {..}`, if we want to start using the sensor, we check to see if it has already received data using `IrReceiver.decode()` and store the value in any variable. The value obtained is the number of the button that has been converted from a hex format to a number by the sensor and stored in `IrReceiver.decodedIRData.decodedRawData`. This variable holds the **32-bit number** decoded by the IR receiver.
 
+The need for writing all these, is to get one up to speed on the setup needed to use the IR Remote in Tinkercad and any Arduino Project.
+
 ### Reference table for values related to their respective buttons (Based on the remote I used).
 | Button        | Decoded Value  |
 |---------------|----------------|
