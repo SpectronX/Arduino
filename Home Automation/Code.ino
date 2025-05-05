@@ -10,6 +10,7 @@ void setup()
 
 void loop()
 {
+  //Code for the Intruder Detector System Using the PIR Sensor and Buzzer.
   int pirState = digitalRead(pir);
   
   switch (pirState){
