@@ -1,7 +1,14 @@
-## Using Arduino to Automate stuff in the house.
+# Arduino-Based Home Automation Systems
 
-Still exploring Arduino's functionalities and capabilities, I tried to automate some activities using Arduino and other sensors. 
+As part of exploring the capabilities of Arduino, I developed a series of subsystems to simulate simple home automation functionalities. These projects focused on practical and beginner-friendly implementations, covering four key systems:
 
-## Systems used in this project.
+- Intruder Detection System  
+- Automatic Lighting System  
+- Temperature-Controlled Fan System  
+- Automatic Door System
 
-The first setup was an Intruder Detection System. By employing the PIR Sensor and buzzer, I set up a system that notifies the house owner, when movements is detected in prohibited spaces. In terms of security, this plays major role and is much more effective when scaled.
+---
+
+## Intruder Detection System
+
+This system uses a **PIR (Passive Infrared) sensor** and a **buzzer**. When motion is detected in a monitored or restricted area, the buzzer sounds, alerting the user. This setup can be used for home security or for detecting presence in a space.
