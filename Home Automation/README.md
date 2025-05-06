@@ -1,6 +1,6 @@
 # Arduino-Based Home Automation Systems
 
-As part of exploring the capabilities of Arduino, I developed a series of subsystems to simulate simple home automation functionalities. These projects focused on practical and beginner-friendly implementations, covering four key systems:
+As part of exploring what Arduino can be used for, I worked on a series of subsystems to simulate simple home automation functionalities. With practical beginner-friendly implementations, I managed to cover four key systems:
 
 - Intruder Detection System  
 - Automatic Lighting System  
