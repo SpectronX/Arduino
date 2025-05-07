@@ -1,3 +1,4 @@
+//Automatic Door System
 #include <Servo.h>
 
 int trigPin = 13;
@@ -9,7 +10,7 @@ void setup()
 {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
-  door.attach(3);
+  door.attach(3); //This line starts the micro servo
   Serial.begin(9600);
 }
 
@@ -28,19 +29,13 @@ void loop()
   Serial.println(distance);
 
   if (distance <= 100) {
-    Serial.println("Opening Door");
-    for(pos = 0; pos <= 90; pos += 1){
+    //Serial.println("Opening Door"); Optional
+    for(pos = 0; pos <= 90; pos += 1){ // defines the range for which the door should open
       door.write(90);
     }
-
-    if (distance == 0) {
-      Serial.println("Someone Just Entered");
-      //door.write(0);
-    }
   } else {
-    Serial.println("Door Closed");
+    //Serial.println("Door Closed"); optional
     door.write(0);
-    //recentlyEntered = false;
   }
 }
 
