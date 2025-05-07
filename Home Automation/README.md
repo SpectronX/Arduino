@@ -17,7 +17,7 @@ This system uses a **PIR (Passive Infrared) sensor** and a **buzzer** (would be 
 
 The door system is built using an **Ultrasonic Sensor** and a **micro servo motor**. The sensor emits ultrasonic pulses and listens for echoes to determine how close an object (like a person) is:
 
-- If someone is within a defined range (e.g., < 50 cm), the Arduino commands the servo motor to rotate, simulating the door opening.
+- If someone is within a defined range (e.g., < 50 cm), and moving towards the system, the Arduino commands the servo motor to rotate, simulating the door opening. Also, when the person is outside the defined range or cannot be "seen" by the Arduino after entering, the door closes.
 
 This mimics a proximity-triggered automatic door mechanism.
 
