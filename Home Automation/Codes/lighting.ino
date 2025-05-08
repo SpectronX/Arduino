@@ -13,10 +13,10 @@ void setup()
 void loop()
 {
   if(analogRead(prPin) > threshold ){
-    Serial.println("The sun is out");
+    //Serial.println("The sun is out"); Optional
     digitalWrite(bulb, LOW);
   } else {
-    Serial.println("Darkness");
+    //Serial.println("Darkness"); Optional
     digitalWrite(bulb, HIGH);
   }
 }
