@@ -21,4 +21,17 @@ The door system is built using an **Ultrasonic Sensor** and a **micro servo moto
 
 This mimics a proximity-triggered automatic door mechanism.
 
+---
+
+## Automatic Lighting System
+
+This system utilizes a **photoresistor (LDR)** and a **bulb**. The LDR’s resistance changes with light levels—lower in bright light and higher in darkness. It forms a **voltage divider** with a resistor and is connected to the Arduino's analog input. The Arduino reads the voltage to determine lighting conditions:
+
+- **Low light** → Low voltage → Bulb ON  
+- **Bright light** → High voltage → Bulb OFF
+
+This setup allows the bulb to turn on automatically when it's dark and off when it's bright.
+
+---
+
 
