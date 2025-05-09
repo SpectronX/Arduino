@@ -41,7 +41,7 @@ This system uses a **TMP36 temperature sensor** and a **DC motor** as a fan. Bas
 - **Higher temperatures** → **Faster fan speed**
 - **Lower temperatures** → **Slower or no fan operation**
 
-Temperature is calculated from analog readings, converted from voltage using a calibrated formula.
+Temperature is calculated from analog readings, for which its voltage and temperature equivalent is found using the formula in the code.
 
 
 
