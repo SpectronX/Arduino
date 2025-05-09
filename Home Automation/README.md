@@ -34,4 +34,14 @@ This setup allows the bulb to turn on automatically when it's dark and off when 
 
 ---
 
+## Temperature-Controlled Fan System
+
+This system uses a **TMP36 temperature sensor** and a **DC motor** as a fan. Based on temperature readings, the Arduino adjusts fan speed using PWM (Pulse Width Modulation):
+
+- **Higher temperatures** → **Faster fan speed**
+- **Lower temperatures** → **Slower or no fan operation**
+
+Temperature is calculated from analog readings, converted from voltage using a calibrated formula.
+
+
 
