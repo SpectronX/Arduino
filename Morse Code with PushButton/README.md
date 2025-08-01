@@ -47,7 +47,7 @@ Otherwise, the system will move ahead without waiting, and the first character c
 
 I plan to work on improving this: maybe by waiting for the first button press before starting the timer.
 
-Feel free to reach out if you have suggestions on that. Anyway, I’m still working to refine it.
+Feel free to reach out if you have suggestions on that.
 
 ---
 
