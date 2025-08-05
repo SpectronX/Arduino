@@ -4,4 +4,9 @@ This was a group project, as part of my coursework, for some time within a semes
 
 ## Components Used
 
+- AHT20 & BMP280 Sensor
+- Arduino Board
+- Jumper Wires
+- Breadboard
+- LCD (I2C Module)
 
